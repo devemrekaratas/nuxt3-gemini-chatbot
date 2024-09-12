@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@google/generative-ai": "^0.17.1",
+    "@nuxt/fonts": "^0.7.2",
+    "@nuxt/ui": "^2.18.4",
+    "@nuxtjs/mdc": "^0.8.3",
+    "@pinia/nuxt": "^0.5.4",
+    "lodash-es": "^4.17.21",
+    "nuxt": "^3.13.0",
+    "pinia": "^2.2.2",
+    "vue": "latest",
+    "vue3-perfect-scrollbar": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "tailwind-scrollbar": "^3.1.0"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}
