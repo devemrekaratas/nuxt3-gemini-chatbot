@@ -26,8 +26,8 @@ const store = useChatStore()
     </USlideover>
     <div class="flex flex-col w-full h-full">
       <Header />
-      <div class="flex flex-col flex-1 overflow-x-hidden">
-        <PerfectScrollbar class="flex-1 chat-list">
+      <div class="flex flex-col flex-1 h-[calc(100%-3.5rem)]">
+        <div class="flex-1 chat-list overflow-y-auto">
           <div class="max-w-3xl mx-auto px-2">
             <div v-if="!store.activeChat?.id" class="flex items-center h-full">
               <Topics />
@@ -53,7 +53,7 @@ const store = useChatStore()
               </div>
             </div>
           </div>
-        </PerfectScrollbar>
+        </div>
         <QuestionBar />
       </div>
     </div>

@@ -31,7 +31,7 @@ defineShortcuts({
                     <div class="flex flex-1 flex-col min-w-0">
                         <UTextarea id="prompt" v-model="store.question" autofocus :disabled="store.loading" autoresize
                             :rows="1" :maxrows="5" variant="none" :padded="false" placeholder="Send a message"
-                            class="ps-2 py-1.5" />
+                            class="ps-2 py-1.5" size="xl" />
                     </div>
                     <div>
                         <UTooltip v-if="!store.isStreaming" text="Send" :shortcuts="['⌘', '⏎']">
