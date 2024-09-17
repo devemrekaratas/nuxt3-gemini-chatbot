@@ -26,8 +26,8 @@ const sendPrompt = (index: number, description: string) => {
                 <div class="text-[#444746] font-semibold">How can I help you today?</div>
             </div>
             <div v-if="status === 'pending'">
-                <div class="flex overflow-x-auto gap-x-4 scrollbar-none">
-                    <USkeleton v-for="i in 3" :key="i" class="sm:w-60 w-44 h-40 shrink-0" />
+                <div class="flex overflow-x-auto gap-x-4 scrollbar-none -ms-2 -me-2">
+                    <USkeleton v-for="i in 3" :key="i" class="first:ms-2 sm:w-60 w-44 h-40 shrink-0" />
                 </div>
             </div>
             <div v-else class="flex gap-x-2.5 overflow-x-auto snap-x snap-mandatory scrollbar-none -ms-2 -me-2 scroll-p-2">
